@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'mainapp',
     'crispy_forms',
     'rest_framework',
+    'specs'
 ]
 
 # REST_FRAMEWORK = {

@@ -17,6 +17,8 @@ from .views import (
 )
 
 
+
+
 urlpatterns = [
     path('', BaseView.as_view(), name='base'),
     path('products/<str:slug>/', ProductDetailView.as_view(), name='product_detail'),
@@ -30,7 +32,7 @@ urlpatterns = [
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('registration/', RegistrationView.as_view(), name='registration'),
-    path('profile/', ProfileView.as_view(), name='profile')
+    path('profile/', ProfileView.as_view(), name='profile'),
 
 ]
 
